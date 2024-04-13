@@ -1,0 +1,31 @@
+{
+  "name": "gemini-webex-bot",
+  "version": "1.0.0",
+  "description": "Starter template for creating a Webex Teams bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --use_strict index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.6.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1",
+    "webex-node-bot-framework": "^2.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "prettier": "2.7.1"
+  },
+  "keywords": [
+    "Cisco",
+    "Webex",
+    "webex-bot-framework",
+    "google",
+    "gemini",
+    "ai",
+    "generative-ai",
+    "bot",
+    "chatbot"
+  ]
+}
