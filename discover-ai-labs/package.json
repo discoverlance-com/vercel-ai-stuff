@@ -1,0 +1,56 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "format": "pretty-quick",
+    "format-staged": "pretty-quick --staged",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "cd discover-ai-labs && npm run format-staged",
+    "pre-push": "cd discover-ai-labs && npm run lint && npm run format",
+    "preserveUnused": [
+      "commit-msg"
+    ]
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.368.0",
+    "next": "14.2.1",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sonner": "^1.4.41",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.13",
+    "pretty-quick": "^4.0.0",
+    "simple-git-hooks": "^2.11.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
