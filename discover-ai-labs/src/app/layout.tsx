@@ -10,9 +10,9 @@ import './globals.css';
 const fontSans = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.VERCEL_URL! || process.env.NEXT_PUBLIC_APP_URL!,
-  ),
+  metadataBase: process.env.VERCEL_URL
+    ? undefined
+    : new URL(process.env.NEXT_PUBLIC_APP_URL!),
   title: 'Discover AI Labs',
   description: 'AI Labs with tooling and examples of using ai',
 };
