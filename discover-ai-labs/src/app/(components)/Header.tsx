@@ -34,9 +34,9 @@ export const Header = () => {
           <Image
             src="/opengraph-image"
             alt="About Discover Labs"
-            width={288}
-            height={64}
-            className="h-6 w-72 object-cover object-center"
+            width={380}
+            height={32}
+            className="object-cover object-center"
           />
           <span className="sr-only">{APP_NAME}</span>
         </Link>
@@ -71,9 +71,9 @@ export const Header = () => {
               <Image
                 src="/opengraph-image"
                 alt="About Discover Labs"
-                width={288}
-                height={64}
-                className="h-6 w-72 object-cover object-center"
+                width={380}
+                height={32}
+                className="object-cover object-center"
               />
               <span className="sr-only">{APP_NAME}</span>
             </Link>
